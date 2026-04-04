@@ -88,7 +88,6 @@ public class OrderCardTest {
     @Test
     void shouldShowErrorIfPhoneIsInvalid() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Лобанова Мария");
-        // Вводим телефон без плюса спереди
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("89365543817");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
